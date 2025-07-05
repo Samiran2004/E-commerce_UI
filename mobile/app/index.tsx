@@ -1,15 +1,14 @@
-import { Text, View } from "react-native";
+import ProductListItem from "@/components/ProductListItem";
+import { FlatList, View } from "react-native";
+import products from '../assets/products.json';
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text style={{fontSize: 30, color: 'red'}}>Hello World!</Text>
+    <View>
+      <FlatList
+        data={products}
+        renderItem={({ item }) => <ProductListItem product={item} />}
+      />
     </View>
   );
 }
