@@ -5,13 +5,13 @@ import products from '../assets/products.json';
 export default function Index() {
   return (
     <View
-      style={{
-        // flex: 1,
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // margin:10,
-        marginTop: 50
-      }}
+    // style={{
+    //   // flex: 1,
+    //   // justifyContent: 'center',
+    //   // alignItems: 'center',
+    //   // margin:10,
+    //   marginTop: 50
+    // }}
     >
       <FlatList
         data={products}
