@@ -3,9 +3,8 @@ import { Heading } from "@/components/ui/heading"
 import { Image } from "@/components/ui/image"
 import { Text } from "@/components/ui/text"
 import { VStack } from "@/components/ui/vstack"
+import { Link } from "expo-router"
 import React from 'react'
-import { Button, ButtonText } from "./ui/button"
-import { Link, router } from "expo-router"
 import { Pressable } from "react-native"
 
 export default function ProductListItem({ product }: { product: Product }) {
